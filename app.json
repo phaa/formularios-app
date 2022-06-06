@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "RealmExpoApp",
+    "slug": "RealmExpoApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
