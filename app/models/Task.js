@@ -1,6 +1,7 @@
 import { Realm, createRealmContext } from '@realm/react';
 
 export class Task {
+  
   constructor({id = new Realm.BSON.ObjectId(), description, isComplete = false}) {
     this.description = description;
     this.isComplete = isComplete;
@@ -21,7 +22,9 @@ export class Task {
   };
 }
 
-export default createRealmContext({
+const config = {
   schema: [Task.schema],
   deleteRealmIfMigrationNeeded: true,
-});
+};
+
+export default createRealmContext(config);
